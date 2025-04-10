@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react()],
   preview: {
     port: parseInt(process.env.PORT) || 4173,
-    host: true
+    host: true,
+    allowedHosts: ['code-reviewer-6-g24y.onrender.com'] // ← Add this line
   }
 })
